@@ -74,5 +74,7 @@ pub use os_type::Type;
 /// println!("Version: {}", info.version());
 /// ```
 pub fn get() -> Info {
-    imp::current_platform()
+
+     Info{ os_type: Type::Unknown , version: Version::unknown() }
+//    imp::current_platform()
 }
